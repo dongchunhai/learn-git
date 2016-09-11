@@ -1,5 +1,5 @@
 常用命令：
 1. status、diff、commit、checkout、rebase、amend、reset
 
-2. 
+2. this is modiftion in the file.
 
