@@ -55,6 +55,35 @@ git reset HEAD file  //将添加到暂存区（add）还没有提交（commit）
 
 	如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到 最新版本 ，你会丢失最近一次提交后你修改的内容。
 
+创建ssh公钥私钥：
+	ssh-keygen -t rsa -C "1970390434@qq.com"
+	将公钥内容添加到github账户中（Add SSH Key）
+
+上传到 github 远程库：
+	要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+	分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！
+
+git clone 从远程库克隆到本地：
+	要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+	Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+分支管理：
+	你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。
+
+Git鼓励大量使用分支：
+	查看分支：git branch
+	创建分支：git branch <name>
+	切换分支：git checkout <name>
+	创建+切换分支：git checkout -b <name>
+	合并某分支到当前分支：git merge <name>
+	删除分支：git branch -d <name>
+
+git 冲突：
+	当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+	用git log --graph命令可以看到分支合并图
+
 
 
 
