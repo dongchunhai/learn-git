@@ -1,3 +1,4 @@
+git 使用基础知识：
 git初始化:
 	初始化一个Git仓库，使用git init命令。
 	添加文件到Git仓库，分两步：
@@ -83,6 +84,19 @@ Git鼓励大量使用分支：
 git 冲突：
 	当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 	用git log --graph命令可以看到分支合并图
+
+	合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+	git checkout -b dev  //创建并且切换分支
+	git add readme.txt  //修改添加到暂存区
+	git checkout master  //切换分支
+	git merge --no-ff -m "merge with no-ff" dev  //普通模式合并分支
+	git log --graph --pretty=oneline --abbrev-commit  //查看历史分支
+
+在实际开发中，我们应该按照几个基本原则进行分支管理：
+	首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+	那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+	你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+
 
 
 
