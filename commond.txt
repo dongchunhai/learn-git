@@ -1,7 +1,15 @@
 常用命令：
 1. status、diff、commit、checkout、rebase、amend、reset
 
-2. this is modiftion in the file.
 
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
+1. 您觉得这份工作所需要的能力，我还有那些不具备？为了胜任这个岗位，我还需要学习哪些知识
+	您可能觉得我没有表现出Xxx能力，其实 ......
+2. 请问您部门里为员工进行过哪些培训？
+	尽量问过往事实，不要问方正原则、企业价值观
+3. 公司对这个职位的新人未来一段时间的期望值？
+
+4. 整理 每个项目中遇到的 难点问题。
+
+5. 你凭什么来面 Xxx？
+
+
