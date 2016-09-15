@@ -78,7 +78,7 @@ Git鼓励大量使用分支：
 	创建分支：git branch <name>
 	切换分支：git checkout <name>
 	创建+切换分支：git checkout -b <name>
-	合并某分支到当前分支：git merge <name>
+	合并某分支到当前分支：git merge <name>    // FF 模式，快进模式合并
 	删除分支：git branch -d <name>
 
 git 冲突：
