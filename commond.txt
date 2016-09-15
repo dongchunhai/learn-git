@@ -12,4 +12,10 @@
 
 5. 你凭什么来面 Xxx？
 
+6. git reset HEAD -- readme.txt 只会将暂存的修改撤销掉，而工作区的修改并没有撤销，可以再用 checkout 去撤销工作区的修改
+				撤销误删除文本操作
+
+7. git checkout dev    切换分支
+
+8. dev 分支下测试行
 
