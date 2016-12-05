@@ -14,7 +14,7 @@ GitHub就是一个免费托管开源代码的远程仓库。但是对于某些�
 $ sudo apt-get install git
 第二步，创建一个git用户，用来运行git服务：
 
-$ sudo adduser git   //密码：dch123
+$ sudo adduser git   //密码：dch123  
 第三步，创建证书登录：
 
 收集所有需要登录的用户的公钥，就是他们自己的id_rsa.pub文件，把所有公钥导入到/home/git/.ssh/authorized_keys文件里，一行一个。
